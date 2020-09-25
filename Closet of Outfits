@@ -1,0 +1,111 @@
+/*
+For the next challenge. Try to create an object
+with a for loop. use rgb for color and randoms for style. 
+It would have to know where in the closet to put the thing . 
+*/
+
+let closet = {
+  shirts: {
+    dressShirt: {
+      name: "dress shirt",
+      color: "blue",
+      style: "dress"
+    },
+
+    tShirt: {
+      name: "t-shirt",
+      color: "white",
+      style: "casual"
+    }
+  },
+  pants: {
+    blueJeans: {
+      name: "blue jeans",
+      color: "blue",
+      style: "casual"
+    },
+    slacks: {
+      name: "slacks",
+      color: "khaki",
+      style: "dress"
+    }
+  },
+  shoes: {
+    sneakers: {
+      name: "sneakers",
+      color: "white",
+      style: "casual"
+    },
+    shoes: {
+      name: "fancy shoes",
+      color: "black",
+      style: "dress"
+    }
+  },
+  socks: {
+    socks1: {
+      name: "tube socks",
+      color: "white",
+      style: "casual"
+    },
+    socks2: {
+      name: "dress socks",
+      color: "black",
+      style: "dress"
+    }
+  }
+};
+
+// const shirtsUp = closet.shirts.entries();
+
+// console.log(shirtsUp);
+console.log(`Here's what's in my Closet:`.toUpperCase());
+//console.log(closet);
+
+
+
+
+const entries = Object.entries(closet);
+
+console.log(`------------------------------`);
+console.log(`Here's what's in my new closet array:`.toUpperCase());
+console.log(entries);
+
+
+
+
+
+
+
+
+
+
+
+// let fancyPants: [];
+// let casualFriday: [];
+let i = 0;
+let j = 0;
+//let k = 0;
+for (i = 0; i < entries.length; i++) {
+  //console.log(`My instance of 'i'`.toUpperCase())
+  ///console.log(entries[i]);//returns first level of array
+  //console.log(entries[i]);
+  
+console.log(Object.keys(closet.shirts);
+  for (entries[i].j = 0; entries[i].j < entries[i].length; entries[i].j++) {
+  //  console.log(`My instance of 'j'`);
+     console.log(entries[i][j]);///returns shirts, 
+      console.log(entries[i][j].style)
+    //  for (entries[i][j].k = 0; entries[i][j].k < entries[i][j].length ; entries[i][j].k++) {
+    //       console.log(entries[i][j][k]);
+    //   }
+  }
+}
+
+// console.log(closet.shirts.dressShirt);
+// console.log(`My shirt is ${closet.shirts.dressShirt.color}.`);
+// console.log(
+//   `I have a ${closet.shirts.tShirt.color}, ${closet.shirts.tShirt.style} ${closet.shirts.tShirt.name}.`
+// );
+
+// //if object's style === dress, push into new array called dressy
